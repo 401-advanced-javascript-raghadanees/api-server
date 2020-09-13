@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "count": {},
+      "results": [],
+      "id": 1
+    },
+    {
+      "category": "accessories",
+      "name": "New Belts",
+      "display_name": "New Belts",
+      "description": "modern collection of Belts",
+      "id": 2
+    },
+    {
+      "name": "clothes",
+      "display_name": "T-shirt",
+      "description": "modern collection of T-shirts",
+      "id": 3,
+      "category": "clothes"
+    },
+    {
+      "category": "accessories",
+      "name": "Eyeglasses",
+      "display_name": "Sun Eyeglasses",
+      "description": "Sun Eyeglasses with high protection against ultraviolet radiation",
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "count": {},
+      "results": [],
+      "id": 1
+    },
+    {
+      "name": "accessories",
+      "display_name": "wedding rings",
+      "description": "modern collection of rings",
+      "id": 2
+    },
+    {
+      "name": "accessories",
+      "display_name": "Sunglasses",
+      "description": "modern collection of Sunglasses with high protection of uv",
+      "id": 3
+    }
+  ]
+}
