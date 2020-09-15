@@ -6,6 +6,43 @@
       "title" : "defaultTitle"
     },
     "paths" : {
+      "/products" : {
+        "get" : {
+          "produces" : [ "application/json" ],
+          "parameters" : [ ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model7"
+              }
+            }
+          }
+        },
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model2"
+            },
+            "x-examples" : {
+              "application/json" : " {\n        \"name\": \"clothesss\",\n        \"display_name\": \"T-shirt\",\n        \"description\": \"modern collection of T-shirts\",\n        \"id\": 1,\n        \"category\": \"clothes\"\n    }"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model3"
+              }
+            }
+          }
+        }
+      },
       "/products/1" : {
         "get" : {
           "produces" : [ "application/json" ],
@@ -18,72 +55,8 @@
               }
             }
           }
-        }
-      },
-      "/categories/2" : {
-        "get" : {
-          "produces" : [ "application/json" ],
-          "parameters" : [ ],
-          "responses" : {
-            "200" : {
-              "description" : "Definition generated from Swagger Inspector",
-              "schema" : {
-                "$ref" : "#/definitions/Model9"
-              }
-            }
-          }
         },
         "put" : {
-          "consumes" : [ "application/json" ],
-          "produces" : [ "application/json" ],
-          "parameters" : [ {
-            "in" : "body",
-            "name" : "body",
-            "required" : false,
-            "schema" : {
-              "$ref" : "#/definitions/Model4"
-            },
-            "x-examples" : {
-              "application/json" : " {\n        \"name\": \"accessories\",\n        \"display_name\": \"wedding rings\",\n        \"description\": \"modern collection of rings\",\n        \"id\": 2\n    }"
-            }
-          } ],
-          "responses" : {
-            "200" : {
-              "description" : "Definition generated from Swagger Inspector",
-              "schema" : {
-                "$ref" : "#/definitions/Model12"
-              }
-            }
-          }
-        }
-      },
-      "/products/2" : {
-        "put" : {
-          "consumes" : [ "application/json" ],
-          "produces" : [ "application/json" ],
-          "parameters" : [ {
-            "in" : "body",
-            "name" : "body",
-            "required" : false,
-            "schema" : {
-              "$ref" : "#/definitions/Model1"
-            },
-            "x-examples" : {
-              "application/json" : "{\r\n            \"category\": \"accessories\",\r\n            \"name\": \"New Belts\",\r\n            \"display_name\": \"New Belts\",\r\n            \"description\": \"modern collection of Belts\"\r\n      \r\n        }"
-            }
-          } ],
-          "responses" : {
-            "200" : {
-              "description" : "Definition generated from Swagger Inspector",
-              "schema" : {
-                "$ref" : "#/definitions/Model10"
-              }
-            }
-          }
-        }
-      },
-      "/products/3" : {
-        "delete" : {
           "consumes" : [ "application/json" ],
           "produces" : [ "application/json" ],
           "parameters" : [ {
@@ -94,14 +67,37 @@
               "$ref" : "#/definitions/Model0"
             },
             "x-examples" : {
-              "application/json" : "{\r\n            \"category\": \"accessories\",\r\n            \"name\": \"New Belts\",\r\n            \"display_name\": \"New Belts\",\r\n            \"description\": \"modern collection of Belts\"\r\n      \r\n        }"
+              "application/json" : " {\n        \"name\": \"clothesss\",\n        \"display_name\": \"T-shirt\",\n        \"description\": \"modern collection of T-shirts\",\n        \"id\": 1,\n        \"category\": \"clothescccccccccccc\"\n    }"
             }
           } ],
           "responses" : {
             "200" : {
               "description" : "Definition generated from Swagger Inspector",
               "schema" : {
-                "$ref" : "#/definitions/Model11"
+                "$ref" : "#/definitions/Model4"
+              }
+            }
+          }
+        },
+        "delete" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "in" : "body",
+            "name" : "body",
+            "required" : false,
+            "schema" : {
+              "$ref" : "#/definitions/Model1"
+            },
+            "x-examples" : {
+              "application/json" : " {\n        \n        \"display_name\": \"T-shirtttttt\"\n        \n    }"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "Definition generated from Swagger Inspector",
+              "schema" : {
+                "$ref" : "#/definitions/Model6"
               }
             }
           }
@@ -114,83 +110,7 @@
             "200" : {
               "description" : "Definition generated from Swagger Inspector",
               "schema" : {
-                "$ref" : "#/definitions/Model16"
-              }
-            }
-          }
-        }
-      },
-      "/categories/3" : {
-        "delete" : {
-          "consumes" : [ "application/json" ],
-          "produces" : [ "application/json" ],
-          "parameters" : [ {
-            "in" : "body",
-            "name" : "body",
-            "required" : false,
-            "schema" : {
-              "$ref" : "#/definitions/Model5"
-            },
-            "x-examples" : {
-              "application/json" : " {\n        \"name\": \"accessories\",\n        \"display_name\": \"wedding rings\",\n        \"description\": \"modern collection of rings\",\n        \"id\": 2\n    }"
-            }
-          } ],
-          "responses" : {
-            "200" : {
-              "description" : "Definition generated from Swagger Inspector",
-              "schema" : {
-                "$ref" : "#/definitions/Model13"
-              }
-            }
-          }
-        }
-      },
-      "/{param0}" : {
-        "post" : {
-          "consumes" : [ "application/json" ],
-          "produces" : [ "application/json" ],
-          "parameters" : [ {
-            "in" : "body",
-            "name" : "body",
-            "required" : false,
-            "schema" : {
-              "$ref" : "#/definitions/Model3"
-            },
-            "x-examples" : {
-              "application/json" : "{\r\n            \"name\": \"accessories\",\r\n            \"display_name\": \"rings\",\r\n            \"description\": \"modern collection of rings\"\r\n            \r\n        }"
-            }
-          }, {
-            "name" : "param0",
-            "in" : "path",
-            "description" : "Example values form path are: 'categories' and 'products'",
-            "required" : true,
-            "type" : "string"
-          } ],
-          "responses" : {
-            "201" : {
-              "description" : "Definition generated from Swagger Inspector",
-              "schema" : {
-                "$ref" : "#/definitions/Model6"
-              }
-            }
-          }
-        }
-      },
-      "/{param1}" : {
-        "get" : {
-          "produces" : [ "application/json" ],
-          "parameters" : [ {
-            "name" : "param1",
-            "in" : "path",
-            "description" : "Example values form path are: 'categories' and 'products'",
-            "required" : true,
-            "type" : "string"
-          } ],
-          "responses" : {
-            "200" : {
-              "description" : "Definition generated from Swagger Inspector",
-              "schema" : {
-                "$ref" : "#/definitions/Model14"
+                "$ref" : "#/definitions/Model5"
               }
             }
           }
@@ -200,9 +120,6 @@
     "definitions" : {
       "Model0" : {
         "properties" : {
-          "category" : {
-            "type" : "string"
-          },
           "name" : {
             "type" : "string"
           },
@@ -210,31 +127,26 @@
             "type" : "string"
           },
           "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "category" : {
             "type" : "string"
           }
         }
       },
       "Model1" : {
         "properties" : {
-          "category" : {
-            "type" : "string"
-          },
-          "name" : {
-            "type" : "string"
-          },
           "display_name" : {
-            "type" : "string"
-          },
-          "description" : {
             "type" : "string"
           }
         }
       },
       "Model2" : {
         "properties" : {
-          "category" : {
-            "type" : "string"
-          },
           "name" : {
             "type" : "string"
           },
@@ -242,6 +154,33 @@
             "type" : "string"
           },
           "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "category" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Model3" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "category" : {
             "type" : "string"
           }
         }
@@ -260,6 +199,9 @@
           "id" : {
             "type" : "integer",
             "format" : "int32"
+          },
+          "category" : {
+            "type" : "string"
           }
         }
       },
@@ -274,145 +216,40 @@
           "description" : {
             "type" : "string"
           },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }
-      },
-      "Model7" : {
-        "properties" : {
           "category" : {
             "type" : "string"
           },
-          "name" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
           "id" : {
-            "type" : "integer",
-            "format" : "int32"
+            "type" : "string"
           }
         }
       },
-      "Count" : { },
-      "Model8" : {
-        "properties" : {
-          "count" : {
-            "$ref" : "#/definitions/Count"
-          },
-          "results" : {
-            "type" : "array"
-          },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }
-      },
-      "Model9" : {
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }
-      },
-      "Model10" : {
-        "properties" : {
-          "category" : {
-            "type" : "string"
-          },
-          "name" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }
-      },
-      "Model11" : { },
-      "Model12" : {
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }
-      },
-      "Model13" : { },
-      "Array_Count" : { },
       "Array" : {
         "properties" : {
-          "count" : {
-            "$ref" : "#/definitions/Array_Count"
+          "name" : {
+            "type" : "string"
           },
-          "results" : {
-            "type" : "array"
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "category" : {
+            "type" : "string"
           },
           "id" : {
-            "type" : "integer",
-            "format" : "int32"
+            "type" : "string"
           }
         }
       },
-      "Model14" : {
+      "Model6" : {
         "type" : "array",
         "items" : {
           "$ref" : "#/definitions/Array"
         }
       },
-      "Model15" : {
-        "properties" : {
-          "category" : {
-            "type" : "string"
-          },
-          "name" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          }
-        }
-      },
-      "Model16" : {
+      "Results" : {
         "properties" : {
           "name" : {
             "type" : "string"
@@ -423,28 +260,51 @@
           "description" : {
             "type" : "string"
           },
-          "id" : {
-            "type" : "integer",
-            "format" : "int32"
-          },
           "category" : {
+            "type" : "string"
+          },
+          "id" : {
             "type" : "string"
           }
         }
       },
-      "Model17_Array_Count" : { },
-      "Model17_Array" : {
+      "Model7" : {
         "properties" : {
           "count" : {
-            "$ref" : "#/definitions/Model17_Array_Count"
-          },
-          "results" : {
-            "type" : "array"
-          },
-          "id" : {
             "type" : "integer",
             "format" : "int32"
+          },
+          "results" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/definitions/Results"
+            }
           }
+        }
+      },
+      "Model8_Array" : {
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "category" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Model8" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/definitions/Model8_Array"
         }
       }
     }
