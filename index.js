@@ -17,7 +17,7 @@ const mongooseOptions = {
 mongoose.connect(MONGODB_URL, mongooseOptions);
 
 // run my application
-serverModule.start();
+serverModule.start(3000);
 
 // node index.js
 // node .

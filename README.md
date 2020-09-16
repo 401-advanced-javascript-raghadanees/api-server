@@ -12,3 +12,6 @@
 ### start server
 
 `json-server --watch ./data/db.json`
+
+## UML lab 8 
+![Image](./assets/lab8.jpg)
