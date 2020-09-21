@@ -1,5 +1,5 @@
 # api-server
-
+An Express/Node.js based API server,  can perform CRUD operations on any data model
 
 ### URL of the swagger hub page
 [swagger hub](https://app.swaggerhub.com/apis/raghad/default-title/0.1#/)
